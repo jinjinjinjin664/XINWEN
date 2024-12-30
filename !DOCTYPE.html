@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路易吉是“哥谭市英雄”还是“一级谋杀犯”</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .content {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        #qrcode {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>路易吉是“哥谭市英雄”还是“一级谋杀犯”</h1>
+
+<div class="content">
+    <p>路易吉，这个曾经备受瞩目的哥谭市市民，如今却成为了关注的焦点。这位以勇气和正义为名的英雄，近日却被警方以一级谋杀罪名逮捕。这一事件震动了整个哥谭市，并引发了人们的广泛讨论。</p>
+
+    <p>许多市民表示，路易吉一直以来都是他们心目中的英雄。无论是在黑暗的街巷中，还是在面对各种威胁时，路易吉总是挺身而出，帮助无助的人们。可是，随着这起事件的爆发，大家开始怀疑路易吉是否真如外界所看到的那样无瑕。</p>
+
+    <p>在他被押送到法院的途中，路易吉的脸上显得异常冷静，与此前的英雄形象截然不同。与此相对比的，是另一位哥谭市的标志性人物——蝙蝠侠。在同样的场合，蝙蝠侠被警方押送的画面却让人感觉到无尽的压迫与痛苦。</p>
+
+    <p>这两张照片成为了市民们讨论的焦点。有人认为，这两者的对比或许正反映了哥谭市对于英雄的定义。是时候重新审视我们对英雄的看法了。是否每个为民请命的人都是真正的英雄，抑或他们也有可能变成罪犯呢？</p>
+
+    <p>这场风波虽然让路易吉暂时跌入了低谷，但他是否真的是一个罪犯，还需要进一步的审判与证据。而哥谭市的市民们，也只能等待结果，继续他们对英雄与罪犯之间界限的思考。</p>
+</div>
+
+<div class="content">
+    <h2>图片对比：</h2>
+    <p>左侧是路易吉被押送的照片，右侧是蝙蝠侠被押送的照片，二者形成了鲜明的对比。</p>
+    <img https://example.com/louigi-arrest.jpg="https://example.com/louigi-arrest.jpg" alt="路易吉被押送" />
+    <img https://example.com/batman-arrest.jpg="https://example.com/batman-arrest.jpg" alt="蝙蝠侠被押送" />
+</div>
+
+<div id="qrcode"></div>
+
+<script>
+    // 生成二维码
+    const newsContent = "路易吉是“哥谭市英雄”还是“一级谋杀犯”？路易吉，这个曾经备受瞩目的哥谭市市民，如今却成为了关注的焦点。这位以勇气和正义为名的英雄，近日却被警方以一级谋杀罪名逮捕...";  // 新闻内容
+    const url = encodeURIComponent("https://example.com/news?article=123");  // 你的新闻页面URL，可以是任何有效的链接
+    QRCode.toCanvas(document.getElementById('qrcode'), url, function (error) {
+        if (error) console.error(error);
+        console.log('二维码生成成功');
+    });
+</script>
+
+</body>
+</html>
+
